@@ -1,5 +1,5 @@
 # myNFQ-API PROJECT
-URL:  https://github.com/Alexandranuthu/NFQMONGODB
+URL:  https://github.com/Fabs-KJJ/NFQMONGO.git
 ## Objective
 To build the server-side component of a “movies” web application. The web
 application will provide users with access to information about different
