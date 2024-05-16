@@ -1,0 +1,15 @@
+const Joi = require('joi');
+
+const authSchema = Joi.object({
+    username: Joi.string().required(),
+    email: Joi.string().email().required().lowercase(),
+    password: Joi.string().min(6).max(255).required(),
+});
+
+const additionalInfoSchema = Joi.object({
+    location: Joi.string().required(),
+    profilePicture: Joi.string().optional(),
+    bio: Joi.string().required(),
+});
+
+module.exports = { authSchema, additionalInfoSchema };
